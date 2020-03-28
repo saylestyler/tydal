@@ -6,3 +6,7 @@
 
 -- alternate way of expressing ^:
 -- d1 $ sound "bd" # n "3"
+
+-- quotes = define a sequence
+-- the following gives you a pattern of kick drum then snare:
+d1 $ sound "bd sd:3"
