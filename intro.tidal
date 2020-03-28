@@ -1,3 +1,6 @@
+-- no sound
+d1 $ sound ""
+
 -- plays a saved .wav file of extenions, in this case a drum beat
 -- d1 $ sound "bd"
 
@@ -9,4 +12,14 @@
 
 -- quotes = define a sequence
 -- the following gives you a pattern of kick drum then snare:
-d1 $ sound "bd sd:3"
+-- d1 $ sound "bd sd:3"
+
+-- more than one sequence =
+-- two or more connections to the synth
+-- leave blank lines between and evaluate each separately
+
+-- d1 $ sound "bd sn:1"
+
+-- d2 $ sound "hh hh hh hh"
+
+-- d3 $ sound "arpy"
