@@ -1,0 +1,8 @@
+-- plays a saved .wav file of extenions, in this case a drum beat
+-- d1 $ sound "bd"
+
+-- plays the third drum beat
+-- d1 $ sound "bd:3"
+
+-- alternate way of expressing ^:
+-- d1 $ sound "bd" # n "3"
