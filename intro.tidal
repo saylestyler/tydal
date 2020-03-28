@@ -30,16 +30,35 @@ d1 $ sound ""
 -- The cycle’s duration always stays the same unless you modify it with cps, we’ll cover this later.
 -- By default, there is one cycle per second.
 
+d1 $ sound "drum drum drum drum"
+
 -- all of these sounds in the cycle will be played in one second
+-- switching eval between d1 and the d1 below will change
 d1 $ sound "bd sd hh cp mt arpy drum odx bd arpy bass2 feel future"
 
--- switching eval between d1 and the d1 below will change
-d1 $ sound "hh hh hh hh hh"
+d1 silence
 
-d1 $ sound "arpy arpy"
+d1 $ sound "[bd bd] sn sn"
 
-d2 $ sound "drum drum drum drum"
+d1 $ sound "[bd bd bd] sn"
 
-d3 $ sound "bass3 bass3"
+-- brackets = pattern groups (more)
+-- this = 2 steps w/ first step = 3
+d1 $ sound "[bd bd bd] sn"
+
+-- 'marking out feet' . syn sug for []
+d1 $ sound "[arpy arpy] [sd sd sd] [future future]"
+
+d1 $ sound "arpy arpy . sd sd sd . future future"
+
+d1 silence
+
+
+-- framtidsgrejer assa lol:
+
+-- oooh!
+d1 $ sound $ samples "drum*2" (run 8)
+
+d1 $ s "drum arpy cp hh" # n (run 8)
 
 hush
