@@ -23,3 +23,23 @@ d1 $ sound ""
 -- d2 $ sound "hh hh hh hh"
 
 -- d3 $ sound "arpy"
+
+-- ### cycles
+-- A cycle is the main “loop” of time in Tidal.
+-- The cycle repeats forever in the background, even when you’ve stopped samples from playing.
+-- The cycle’s duration always stays the same unless you modify it with cps, we’ll cover this later.
+-- By default, there is one cycle per second.
+
+-- all of these sounds in the cycle will be played in one second
+d1 $ sound "bd sd hh cp mt arpy drum odx bd arpy bass2 feel future"
+
+-- switching eval between d1 and the d1 below will change
+d1 $ sound "hh hh hh hh hh"
+
+d1 $ sound "arpy arpy"
+
+d2 $ sound "drum drum drum drum"
+
+d3 $ sound "bass3 bass3"
+
+hush
